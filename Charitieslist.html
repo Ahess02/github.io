@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charities</title>
+
+    <style>
+        /* Your existing styles go here */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>A look into Charities</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="Charitieslist.html">Charities List</a>
+        <a href="Charityprofile.html">Charity Profiles</a>
+    </nav>
+
+    <h1>Charities List</h1>
+
+    <div class="container">
+        <!-- Left List -->
+        <div class="left-list">
+            <ul>
+                <li onclick="showTextBox('item1')">Item 1</li>
+                <li onclick="showTextBox('item2')">Item 2</li>
+                <li onclick="showTextBox('item3')">Item 3</li>
+                <!-- Add more list items as needed -->
+            </ul>
+        </div>
+
+        <!-- Right Text Boxes -->
+        <div class="right-boxes">
+            <div id="item1" class="text-box">Content for Item 1</div>
+            <div id="item2" class="text-box">Content for Item 2</div>
+            <div id="item3" class="text-box">Content for Item 3</div>
+            <!-- Add more text boxes as needed -->
+        </div>
+    </div>
+
+    <script>
+        function showTextBox(itemId) {
+            // Hide all text boxes
+            document.querySelectorAll('.text-box').forEach(function (box) {
+                box.style.display = 'none';
+            });
+
+            // Show the selected text box
+            document.getElementById(itemId).style.display = 'block';
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2023 My Website</p>
+        <div class="contact-title">Contact</div>
+        <div class="phone-number">Phone: +1 (555) 123-4567</div>
+    </footer>
+</body>
+
+</html>
